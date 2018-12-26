@@ -90,3 +90,4 @@ C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Release\WebApplication1.csproj.CopyComplete
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Release\WebApplication1.csprojAssemblyReference.cache

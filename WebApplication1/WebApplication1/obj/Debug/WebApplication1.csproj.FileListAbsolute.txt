@@ -184,3 +184,7 @@ C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\bin\PagedList.dll
+C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\bin\PagedList.Mvc.dll
+C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\bin\PagedList.xml
+C:\Users\SB250124\source\repos\Emarketing-Project\WebApplication1\WebApplication1\bin\PagedList.Mvc.xml

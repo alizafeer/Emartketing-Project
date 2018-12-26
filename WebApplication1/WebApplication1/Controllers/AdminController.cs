@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication1.Models;
+using PagedList;
 
 namespace WebApplication1.Controllers
 {
@@ -60,6 +61,7 @@ namespace WebApplication1.Controllers
             }
             else
             {
+                
                 tbl_category cat = new tbl_category();
                 cat.cat_name = cvm.cat_name;
                 cat.cat_image = path;
@@ -67,12 +69,20 @@ namespace WebApplication1.Controllers
                 cat.cat_fk_ad = Convert.ToInt32(Session["ad_id"].ToString());
                 db.tbl_category.Add(cat);
                 db.SaveChanges();
-                return RedirectToAction("Create");
+                return RedirectToAction("ViewCategory");
             }
 
             return View();
         }
 
+        public ActionResult ViewCategory(int ? page)
+        {
+            int pagesize = 9, pageindex = 1;
+            pageindex = page.HasValue ? Convert.ToInt32(page) : 1;
+            var list = db.tbl_category.Where(x => x.cat_status == 1).OrderByDescending(x=> x.cat_id).ToList();
+            IPagedList<tbl_category> stu = list.ToPagedList(pageindex, pagesize);
+            return View(stu);
+        }
 
         public string uploadimgfile(HttpPostedFileBase file)
         {
