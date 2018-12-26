@@ -11,23 +11,18 @@ namespace WebApplication1.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class tbl_admin
     {
-        private string _ad_password;
-
         public tbl_admin()
         {
             this.tbl_category = new HashSet<tbl_category>();
         }
-
+    
         public int ad_id { get; set; }
-        [Required(ErrorMessage = "*")]
         public string ad_username { get; set; }
-        [Required(ErrorMessage = "*")]
-        public string ad_password { get => _ad_password; set => _ad_password = value; }
-        
+        public string ad_password { get; set; }
+    
         public virtual ICollection<tbl_category> tbl_category { get; set; }
     }
 }
