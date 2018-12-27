@@ -11,6 +11,7 @@ namespace WebApplication1.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class tbl_category
     {
@@ -20,7 +21,9 @@ namespace WebApplication1.Models
         }
     
         public int cat_id { get; set; }
+        [Required(ErrorMessage ="*")]
         public string cat_name { get; set; }
+        
         public string cat_image { get; set; }
         public Nullable<int> cat_fk_ad { get; set; }
         public Nullable<int> cat_status { get; set; }

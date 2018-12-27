@@ -11,13 +11,18 @@ namespace WebApplication1.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class tbl_product
     {
         public int pro_id { get; set; }
+        [Required(ErrorMessage = "*")]
         public string pro_name { get; set; }
+        [Required(ErrorMessage = "*")]
         public string pro_image { get; set; }
+        [Required(ErrorMessage = "*")]
         public string pro_desc { get; set; }
+        [Required(ErrorMessage = "*")]
         public Nullable<int> pro_price { get; set; }
         public Nullable<int> pro_fk_user { get; set; }
         public Nullable<int> pro_fk_cat { get; set; }

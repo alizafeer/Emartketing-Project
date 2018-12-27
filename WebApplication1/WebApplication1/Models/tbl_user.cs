@@ -11,7 +11,8 @@ namespace WebApplication1.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class tbl_user
     {
         public tbl_user()
@@ -20,10 +21,15 @@ namespace WebApplication1.Models
         }
     
         public int u_id { get; set; }
+        [Required(ErrorMessage = "*")]
         public string u_name { get; set; }
+        [Required(ErrorMessage = "*")]
         public string u_email { get; set; }
+        [Required(ErrorMessage = "*")]
         public string u_password { get; set; }
+        [Required(ErrorMessage = "*")]
         public string u_image { get; set; }
+        [Required(ErrorMessage = "*")]
         public string u_contact { get; set; }
     
         public virtual ICollection<tbl_product> tbl_product { get; set; }
